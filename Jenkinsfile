@@ -3,7 +3,7 @@ pipeline {
         docker {
             //image 'buildcontainer:2.7'
             //image 'buildcontainer:3.3' use this
-            image 'buildcontainer:3.5'
+            image 'buildcontainer:3.6'
 
         }
     }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Run the Python script without changing the directory
                 //sh "python3 /app/g3.py"
-                sh "python3 /app/g4.py"
+                sh "python3 /app/info.py"
 
                 
             }
