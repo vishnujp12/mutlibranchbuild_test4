@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'buildcontainer:2.7'
+            //image 'buildcontainer:2.7'
+            image 'buildcontainer:3.2'
         }
     }
 
@@ -16,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the Python script without changing the directory
-                sh "python3 /app/g1.py"
+                sh "python3 /app/g3.py"
             }
         }
     }
