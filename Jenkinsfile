@@ -2,8 +2,8 @@ pipeline {
     agent {
         docker {
             //image 'buildcontainer:2.7'
-            //image 'buildcontainer:3.3'
-            image 'buildcontainer:3.4'
+            //image 'buildcontainer:3.3' use this
+            image 'buildcontainer:3.5'
 
         }
     }
